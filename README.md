@@ -12,6 +12,7 @@
 - Funtions 
 
      For user:
+     
             + Login
             + Logout
             + Register
@@ -25,6 +26,7 @@
             +
         
     For admin:
+    
             + Insert product
             + 
 
