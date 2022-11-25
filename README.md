@@ -10,21 +10,24 @@
     user-username: phpmyadmin
     user-password: qwerty
 - Funtions 
- For user:
-    + Login
-    + Logout
-    + Register
-    + Upgrade account to VIP
-    + Vip account can place order with discount (30%)
-    + Payment
-    + Update profile
-    + Forget Password
-    + Put Money
-    + Send money to an other account
-    
-For admin:
-    + Insert product
-   
+
+     For user:
+        + Login
+        + Logout
+        + Register
+        + Upgrade account to VIP
+        + Vip account can place order with discount (30%)
+        + Payment
+        + Update profile
+        + Forget Password
+        + Put Money
+        + Send money to an other account
+        +
+        
+    For admin:
+        + Insert product
+        + 
+
     
     
 
