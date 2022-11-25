@@ -1,4 +1,4 @@
 FROM php:7.4.3-apache
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-COPY ./mysql-init-files/db.sql /docker-entrypoint-initdb.d/
+COPY ./mysql-init-files/webapp.sql /docker-entrypoint-initdb.d/
