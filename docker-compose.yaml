@@ -1,0 +1,33 @@
+version: "3.7"
+services:
+  web-server:
+    build:
+      dockerfile: php.Dockerfile
+      context: .
+    restart: always
+    volumes:
+      - "./webapp/:/var/www/html/"
+    ports:
+      - "8888:80"
+      
+  mysql-server:
+    image: mysql:8.0.19
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: week2
+      MYSQL_USER: phpmyadmin
+      MYSQL_PASSWORD: qwerty
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./mysql-init-files:/docker-entrypoint-initdb.d
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.0.1
+    restart: always
+    environment:
+      PMA_HOST: mysql-server
+    ports:
+      - "5555:80"
+volumes:
+  mysql-data:
